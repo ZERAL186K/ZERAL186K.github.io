@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Espresso Oasis</title>
+    <link rel="icon" href="image/nav.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .main-content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            background-color: white;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            float: left;
+            width: 30%;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        ul, li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul.slider{
+            position: relative;
+            width: 800px;
+            height: 300px;
+        }
+        ul.slider li{
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: inherit;
+            height: inherit;
+            background-color: white;
+            transition: opacity .5s;
+        }
+
+        ul.slider li img{
+            width: 800px;
+            height: 300px;
+        }
+
+        ul.slider li:first-child{
+            opacity: 1;
+        }
+
+        ul.slider li:target{
+            opacity: 1;
+        }
+
+        .list {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .list li{
+            display: inline-block;
+            text-align: center;
+        }
+
+        .list li a{
+            display: inline-block;
+            columns: white;
+            text-decoration: none;
+            background-color: grey;
+            padding: 10px;
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            border-radius: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/logo.png" alt="Cafetería El Buen Café" width="150" height="150">
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="Menu.html">Menú</a>
+        <a href="Contacto.html">Contacto</a>
+    </nav>
+    <div class="main">
+        <section class="quienes-somos">
+            <h2>Quiénes Somos</h2>
+            <p>Somos una cafetería comprometida con brindarles la mejor experiencia al momento de </p>
+        </section>
+        
+        <section class="container">
+            <ul class="slider">
+                <li id="slide1">
+                    <img src="image/logoneg.png">
+                </li>
+                <li id="slide2">
+                    <img src="image/americano.jpg">
+                </li>
+                <li id="slide3">
+                    <img src="image/capuchino.jpg">
+                </li>
+                <li id="slide4">
+                    <img src="image/latte.webp">
+                </li>
+                <li id="slide5">
+                    <img src="image/pastel.webp">
+                </li>
+                <li id="slide6">
+                    <img src="image/galletas.jpg">
+                </li>
+            </ul>
+
+            <ul class="list">
+                <li>
+                    <a href="#slide1">1</a>
+                </li>
+                <li>
+                    <a href="#slide2">2</a>
+                </li>
+                <li>
+                    <a href="#slide3">3</a>
+                </li>
+                <li>
+                    <a href="#slide4">4</a>
+                </li>
+                <li>
+                    <a href="#slide5">5</a>
+                </li>
+                <li>
+                    <a href="#slide6">6</a>
+                </li>
+            </ul>
+        </section>
+                
+        <section class="horario">
+            <h2>Horario de Atención</h2>
+
+            <h2>Lunes a Viernes: 9:00am - 8:00pm</h2>
+        </section>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cafetería El Buen Café</p>
+    </footer>
+</body>
+</html>
